@@ -184,8 +184,8 @@ function whatBeatsWhat(userSelected, pcSelected){
     }else if( userSelected == pcSelected){
         
         console.log("Tie : 7");
-        let user_src = `/assets/${userSelected}.png`;
-        let pc_src = `/assets/${pcSelected}.png`;
+        let user_src = `./assets/${userSelected}.png`;
+        let pc_src = `./assets/${pcSelected}.png`;
         userChoiceImage = InstantiateImage(user_src,'28%','50%',userSelected);
         pcChoiceImage = InstantiateImage(pc_src,'60%','50%',pcSelected);
         document.body.appendChild(userChoiceImage);
