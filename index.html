@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock_paper_scissor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="frame-1">
+        <div id="heading">
+            <span id="rock_heading">ROCK</span><br>
+            <span id="paper_heading">PAPER</span><br>
+            <span id="scissors_heading">SCISSORS</span>
+            <div id="computer_score">
+                <span id="computer">COMPUTER</span><br>
+                <span id="comp_score">SCORE</span><br>
+                <span id="computer_count">0</span>
+            </div>
+            <div id="your_score" class="abcd">
+                <span id="your">YOUR</span><br>
+                <span id="you_score">SCORE</span><br>
+                <span id="your_count">0</span>
+            </div>
+
+            <div class="circles" id="circles-id">
+            
+            <div id="outer1_circle">
+                <img src="/assets/rock.png" id="rock_img" alt="rock-img">
+            </div>
+
+            <div id="outer2_circle">
+                <img src="/assets/scissors.png" id="scissors_img" alt="scissors-img">
+            </div>
+
+            <div id="outer3_circle">
+                <img src="/assets/paper.png" id="paper_img" alt="paper-img">
+            </div>
+
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+
+            </div>
+        </div>  
+        </div>
+
+        <button id="rules" onclick="controlRules(1)">RULES</button>
+        <div id="rules_msg"> 
+            <span id="game_rules">Game Rules</span>
+            <ul>
+            <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li><br>
+            <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span></li><br>
+            <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li><br>
+            <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+            </ul>
+        </div>
+        <div>
+            <span id="close-btn-id" onclick="controlRules(0)" class="close-btn"><a href="#">X</a></span>
+        </div>
+        <!-- Paste 2 -->
+
+        <!-- Paste 2 -->
+
+        <!-- USER WINS OR PC WINS -->
+        <div id="you-win-id" class="you_win" >
+            <span id="winning">YOU WIN<span>
+            <span class="against_pc">AGAINST PC</span><br>
+            <button class="again_play" id="play-again-id" onclick="playAgain()" >PLAY AGAIN</button>
+        </div> 
+        <div id="you-lose-id"class="you_loose" >
+            <span id="loosing">YOU LOST<span>
+            <span class="against_pc">AGAINST PC</span><br>
+            <button class="again_play" id="play-again-id" onclick="playAgain()" >PLAY AGAIN</button>
+        </div>
+        <div id="match-tie-id" class="match_tie">
+            <span id="tie">TIE UP<span>
+            <button class="again_play" id="play-again-id" onclick="playAgain()">REPLAY</button>
+        </div>
+
+        <!-- WHO PICK WHAT -->
+        <div class="outerCover" Id="outer-cover-id">
+            <div id="you_picked">
+                <span id="user_pick">YOU PICKED</span>
+            </div>
+            <div id="pc_picked">
+                <span id="pc_pick">PC PICKED</span>
+            </div>
+        </div>
+        <!-- next-btn -->
+        <button id="nxt-btn" onclick="next()">NEXT</button>
+
+        <!-- HURRAY PAGE  -->
+    <div id="frame-2">
+        <img src="./assets/wincup.png" id="wincup">
+        <img src="./assets/Star 1.png" id="star1">
+        <img src="./assets/Star 2.png" id="star2">
+        <img src="./assets/Star 3.png" id="star3">
+        <img src="./assets/Star 5.png" id="star5">
+        <img src="./assets/Star 6.png" id="star6">
+        <img src="./assets/Star 7.png" id="star7">
+        <img src="./assets/Star 8.png" id="star8">
+        <img src="./assets/Star 9.png" id="star9">
+        <div class="head">
+            <span id="hurray">HURRAY!!</span>
+            <span id="you_won">YOU WON THE GAME</span>
+            <button class="again_play" id="nxt-play" onclick="playAgain()">PLAY AGAIN</button>
+        </div>
+    </div>
+    <Script src="index.js"></Script>
+
+</body>
+</html>
