@@ -21,9 +21,9 @@ var pcChoiceImage="";
 var ele="";
 
 // Source Variables
-const rockImageSource = "/assets/rock.png";
-const paperImageSource = "/assets/paper.png";
-const scissorImageSource = "/assets/scissors.png";
+const rockImageSource = "./assets/rock.png";
+const paperImageSource = "./assets/paper.png";
+const scissorImageSource = "./assets/scissors.png";
 
 // UI REF
 let displayYouPick_PcPick = false;
